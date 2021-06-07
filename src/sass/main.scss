@@ -1,0 +1,762 @@
+
+/******************************** FONTS STYLE **********************************/
+
+@font-face {
+  font-family: "Inter-Bold";
+  src: url("/assets/fonts/fontInter/Inter-Bold.ttf") format('truetype');
+}
+
+@font-face{
+  font-family: "Inter-Medium";
+  src: url("/assets/fonts/fontInter/Inter-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Inter-Regular";
+  src: url("/assets/fonts/fontInter/Inter-Regular.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "Inter-SemiBold";
+  src: url("/assets/fonts/fontInter/Inter-SemiBold.ttf") format('truetype');
+}
+
+.font-inter-bold{
+  font-family: "Inter-Bold", sans-serif;
+}
+
+.font-inter-medium{
+  font-family: "Inter-Medium", sans-serif;
+}
+
+.font-inter-regular{
+  font-family: "Inter-Regular", sans-serif;
+}
+
+.font-inter-semibold{
+  font-family: "Inter-SemiBold", sans-serif;
+}
+
+/******************************* Body STYLE *************************************/
+
+body{
+  background-color: #FAFAFA;
+}
+
+/******************************** NavBar STYLE **********************************/
+
+.navbar-one {
+  /* NavBar style */
+  width: 100%;
+  height: 80px;
+  background-color: #FAFAFA;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  .NavBar {
+    width: 80%;
+      /* Logo style */
+      .navbar-brand {
+        font-size: 22px;
+        line-height: 100%;
+        /* identical to box height, or 22px */
+        letter-spacing: -0.02em;
+        color: #008F48;
+      }
+
+      /* Search style */
+      .input-group {
+        width: 300px;
+        height: 38px;
+        background: #FFFFFF;
+        box-shadow: 0px 2px 2px rgba(204, 204, 204, 0.51);
+        border-radius: 5px;
+        input{
+          height: 38px;
+          box-shadow: 0px 2px 2px rgba(204, 204, 204, 0.51);
+        }
+      }
+
+      /* Language change style */
+      .language{
+        font-size: 14px;
+        line-height: 17px;
+        /* identical to box height */
+        display: flex;
+        align-items: center;
+        color: rgba(0, 0, 0, 0.8);
+        opacity: 0.7;
+      }
+
+      /* Phone button style */
+      button{
+        width: 190px;
+        height: 40px;
+        /* uzdon */
+        border: 1px solid #008F48;
+        box-sizing: border-box;
+        border-radius: 10px;
+        /* a Number style */
+        a{
+          font-size: 15px;
+          line-height: 100%;
+          /* identical to box height, or 16px */
+          letter-spacing: -0.02em;
+          /* uzdon */
+          color: #008F48;
+          /* a img style */
+          img{
+            width: 16px;
+            margin-left: 0;
+            padding-left: 0;
+          }
+        }
+      }
+  }
+}
+
+/******************************* NavBar-Two STYLE *******************************/
+
+.navbarTwo{
+  /* NavBar-Two style */
+  width: 100%;
+  height: 70px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 2px rgba(204, 204, 204, 0.51);
+
+  .NavBar-Two{
+    width: 80%;
+    margin: 0 auto;
+    /* Home brand style */
+    .home_brand{
+      width: 40px;
+      height: 40px;
+      /* uzdon */
+      background: #008F48;
+      border-radius: 10px;
+    }
+    /* Nav link style */
+    .nav{
+      .nav-item{
+        .nav-link{
+          font-size: 14px;
+          line-height: 100%;
+          /* identical to box height, or 14px */
+          color: #000000;
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+}
+
+/****************************** SimpleSlider STYLE *****************************/
+
+
+
+/****************************** Main Card STYLE *******************************/
+
+.main_cards{
+  width: 100%;
+  margin-top: 100px;
+  /* News style */
+  .main_cards_news{
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  /* Cards style */
+  .col-4{
+    margin-top: 50px;
+    .card{
+      border-radius: 10px;
+      /* Card images style */
+      .card_images{
+          width: 192px;
+          height: 192px;
+        margin: 0 auto;
+      }
+      .card-body{
+        /* Time clock views style */
+        span{
+          font-size: 15px;
+          line-height: 100%;
+          /* identical to box height, or 15px */
+          color: #000000;
+          opacity: 0.5;
+        }
+
+        /* Title style */
+        h4{
+          font-size: 18px;
+          line-height: 100%;
+          /* identical to box height, or 18px */
+          color: #000000;
+          margin-top: 20px;
+          height: 34px;
+        }
+
+        /* Descreption style */
+        p{
+          font-size: 16px;
+          line-height: 24px;
+          /* or 150% */
+          height: 34px;
+          color: #000000;
+          opacity: 0.7;
+          margin-top: 40px;
+        }
+
+        /* Button style */
+        button{
+          width: 120px;
+          height: 40px;
+          /* uzdon */
+          border: 1px solid #008F48;
+          box-sizing: border-box;
+          border-radius: 10px;
+          margin-top: 65px;
+          /* Batafsil style */
+          font-size: 18px;
+          line-height: 100%;
+          /* identical to box height, or 18px */
+          /* uzdon */
+          color: #008F48;
+        }
+      }
+
+      /* Card hover style */
+      &:hover{
+        background: #FFFFFF;
+        box-shadow: 0px 5px 15px #D2D2D2;
+        border-radius: 10px;
+      }
+      /* Card hover h4 color style */
+      &:hover h4{
+        color: #008F48;
+      }
+      /* Card hover p color style */
+      &:hover p{
+        color: #000000;
+        opacity: 1;
+      }
+      /* Card hover button color bgc style */
+      &:hover button{
+        background-color: #008F48;
+        color: #FFFFFF;
+      }
+    }
+  }
+
+/* Componies news style */
+  .col-12{
+    margin-top: 100px;
+  }
+
+  /* Card nth-child 5 img style */
+  .card_images_5{
+    width: 305px;
+  }
+}
+
+/****************************** Online Message STYLE *************************/
+
+.online_message{
+  width: 100%;
+  height: 206px;
+  background: linear-gradient(88.68deg, #FFFFFF 36.84%, #E7E7EB 74.27%), #FFFFFF;
+  box-shadow: 0px 2px 2px #DCDCDC;
+  margin-top: 100px;
+
+  /* H1 style */
+  h1{
+    font-size: 36px;
+    line-height: 55px;
+    /* or 153% */
+    color: #0D374B;
+  }
+  /* button  style */
+  button{
+    width: 180px;
+    height: 40px;
+    /* donn */
+    background: #008F48;
+    /* uzdon */
+    border: 1px solid #008F48;
+    box-sizing: border-box;
+    border-radius: 10px;
+    /* Text style */
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height, or 122% */
+    color: #FFFFFF;
+  }
+}
+
+/***************************** Media STYLE ***********************************/
+
+.media_cards{
+  width: 100%;
+  margin-top: 100px;
+  .row{
+    width: 80%;
+    margin: 0 auto;
+
+    /* Media text style */
+    .col-12{
+      h2{
+        font-size: 32px;
+        line-height: 100%;
+        /* identical to box height, or 32px */
+        color: #000000;
+      }
+    }
+
+    /* Media link active style */
+    .col-12{
+      .link_active{
+        width: 455px;
+        height: 64px;
+        background: #FFFFFF;
+        box-shadow: 0px 2px 2px rgba(204, 204, 204, 0.51);
+        border-radius: 5px;
+        ul{
+          .active{
+            width: 113px;
+            height: 44px;
+            /* donn */
+            background: #008F48;
+            border-radius: 5px;
+            margin: 10px 0 10px 14px;
+          }
+        }
+      }
+    }
+
+    /* Media cards style */
+    .col-4{
+      .card{
+        box-shadow: 0px 2px 2px rgba(204, 204, 204, 0.51);
+        border-radius: 10px;
+
+        /* Card hover style */
+        &:hover{
+          box-shadow: 0px 5px 15px #D2D2D2;
+
+          h4{
+            color: #008F48;
+          }
+        }
+
+        h4{
+          font-size: 18px;
+          line-height: 24px;
+          /* or 133% */
+          color: #000000;
+        }
+
+        span{
+          margin-top: 10px;
+          font-size: 15px;
+          line-height: 100%;
+          /* identical to box height, or 15px */
+          color: #000000;
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}
+
+/***************************** WebSite Cards STYLE **************************/
+
+.web_site{
+  width: 100%;
+  height: 240px;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 2px rgba(222, 221, 221, 0.55);
+  border-radius: 10px;
+  margin-top: 100px;
+
+  /* Web site Cards style */
+  .web_site_card{
+    width: 80%;
+    margin: auto;
+
+    /* Card style */
+    .card{
+      width: 222px;
+      height: 240px;
+      background: #FFFFFF;
+      border: 0;
+      border-radius: 0;
+      /* Card hover style */
+      &:hover{
+        background: rgba(0, 143, 72, 0.45);
+        backdrop-filter: blur(4px);
+      }
+      img{
+        width: 87px;
+        height: 90px;
+        margin: 20px auto;
+      }
+
+      p{
+        font-size: 14px;
+        line-height: 20px;
+        /* or 143% */
+        text-align: center;
+        color: #000000;
+        opacity: 0.7;
+      }
+    }
+  }
+}
+
+
+/***************************** Footer STYLE ********************************/
+
+.footer{
+  width: 100%;
+  height: 350px;
+  background: #5E5E5E;
+  box-shadow: 0px 2px 2px #DCDCDC;
+  margin-top: 100px;
+
+  .footer_wrap{
+    width: 80%;
+    margin: auto;
+
+    ul{
+      margin-top: 80px;
+    }
+    .col-4{
+      ul{
+        li{
+          h3{
+            font-size: 26px;
+            line-height: 100%;
+            /* identical to box height, or 26px */
+            color: #FFFFFF;
+          }
+        }
+
+        p{
+          font-size: 15px;
+          line-height: 28px;
+          /* or 156% */
+          color: #FFFFFF;
+          opacity: 0.7;
+        }
+      }
+    }
+
+    .col-3{
+      ul{
+        li{
+          h3{
+            font-size: 20px;
+            line-height: 100%;
+            /* identical to box height, or 20px */
+            color: #FFFFFF;
+          }
+          .font-inter-regular{
+            font-size: 15px;
+            line-height: 100%;
+            /* identical to box height, or 18px */
+            color: #FFFFFF;
+            opacity: 0.7;
+          }
+        }
+      }
+    }
+  }
+
+  .line{
+    width: 100%;
+    height: 1px;
+    margin-top: 86px;
+    background: #747474;
+    transform: matrix(1, 0, 0, -1, 0, 0);
+  }
+}
+
+
+
+/***************************** Web More Page STYLE ************************/
+
+.more_container{
+  width: 100%;
+  .row{
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+
+    .card{
+      background: #FFFFFF;
+      border-radius: 10px;
+    }
+
+    /* Card time text style */
+    a{
+      font-size: 16px;
+      line-height: 100%;
+      /* identical to box height, or 16px */
+      color: #0B06FF;
+    }
+
+    span{
+      font-size: 16px;
+      line-height: 100%;
+      /* identical to box height, or 16px */
+      color: #000000;
+      opacity: 0.5;
+    }
+
+    /* Card content style */
+    h3{
+      font-size: 22px;
+      line-height: 22px;
+      /* identical to box height, or 83% */
+      color: #000000;
+    }
+
+    p{
+      font-size: 16px;
+      line-height: 28px;
+      /* or 185% */
+      color: #000000;
+      opacity: 0.8;
+    }
+
+    /* Mavzu text style */
+    .mavzu{
+      h4{
+        font-size: 22px;
+        line-height: 25px;
+        /* identical to box height, or 114% */
+        color: #000000;
+      }
+      h5{
+        font-size: 18px;
+        line-height: 25px;
+        /* identical to box height, or 139% */
+        color: #000000;
+      }
+    }
+
+    /* Comment container style */
+    .comment_container{
+      img{
+        width: 80px;
+        height: 80px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        margin-top: 20px;
+      }
+      textarea{
+        width: 400px;
+        height: 80px;
+        background: #FFFFFF;
+        border: 1px solid #D7D7D7;
+        box-sizing: border-box;
+        border-radius: 10px;
+        margin-left: 17px;
+        margin-top: 20px;
+      }
+
+      h4{
+        font-size: 16px;
+        line-height: 25px;
+        /* identical to box height, or 156% */
+        color: #000000;
+      }
+      p{
+        font-size: 13px;
+        line-height: 14px;
+        /* identical to box   height, or 15px */
+        color: #000000;
+      }
+
+
+      .picture{
+        width: 18px;
+        height: 18px;
+        margin-top: -10px;
+      }
+
+      .reply_text{
+        margin-left: 12px;
+        margin-top: 14px;
+      }
+
+      .reply{
+        font-size: 13px;
+        /* identical to box height, or 15px */
+        color: #000000;
+        opacity: 0.6;
+      }
+    }
+
+    /* Col-5 Media Style */
+    .col-5{
+      .card{
+        background: #FFFFFF;
+        border-radius: 10px;
+        h2{
+          font-size: 22px;
+          line-height: 24px;
+          /* identical to box height, or 109% */
+          color: #000000;
+        }
+        span{
+          font-size: 15px;
+          line-height: 100%;
+          /* identical to box height, or 15px */
+          color: #000000;
+          opacity: 0.5;
+        }
+        a{
+          font-size: 15px;
+          line-height: 100%;
+          /* identical to box height, or 15px */
+          color: #0B06FF;
+        }
+        h3{
+          font-size: 18px;
+          line-height: 24px;
+          /* or 133% */
+          color: #000000;
+          opacity: 0.7;
+        }
+
+        .hover_card{
+          &:hover{
+            h3{
+              color: #008F48;
+              opacity: 0.7;
+            }
+          }
+        }
+      }
+
+      .card_shikoyat{
+        background: #F2F2F2;
+        border-radius: 10px;
+
+        h1{
+          font-size: 24px;
+          line-height: 34px;
+          /* or 142% */
+          text-align: center;
+          color: #0D374B;
+        }
+
+        img{
+          width: 117.25px;
+          height: 120px;
+        }
+
+        h6{
+          font-size: 22px;
+          line-height: 30px;
+          /* or 136% */
+          text-align: center;
+          color: #000000;
+        }
+      }
+    }
+
+    /* Col-12 vs col-4 News style */
+    .col-12{
+      margin-top: 100px;
+      h3{
+        font-size: 32px;
+        line-height: 100%;
+        /* identical to box height, or 32px */
+        color: #000000;
+      }
+    }
+    /* Cards style */
+    .col-4{
+      margin-top: 50px;
+      .card{
+        border-radius: 10px;
+        /* Card images style */
+        .card_images{
+          width: 100%;
+          margin: 0 auto;
+        }
+        .card-body{
+          /* Time clock views style */
+          span{
+            font-size: 15px;
+            line-height: 100%;
+            /* identical to box height, or 15px */
+            color: #000000;
+            opacity: 0.5;
+          }
+
+          /* Title style */
+          h4{
+            font-size: 18px;
+            line-height: 100%;
+            /* identical to box height, or 18px */
+            color: #000000;
+            margin-top: 20px;
+            height: 34px;
+          }
+
+          /* Descreption style */
+          p{
+            font-size: 16px;
+            line-height: 24px;
+            /* or 150% */
+            height: 34px;
+            color: #000000;
+            opacity: 0.7;
+            margin-top: 40px;
+          }
+
+          /* Button style */
+          button{
+            width: 120px;
+            height: 40px;
+            /* uzdon */
+            border: 1px solid #008F48;
+            box-sizing: border-box;
+            border-radius: 10px;
+            margin-top: 65px;
+            /* Batafsil style */
+            font-size: 18px;
+            line-height: 100%;
+            /* identical to box height, or 18px */
+            /* uzdon */
+            color: #008F48;
+          }
+        }
+
+        /* Card hover style */
+        &:hover{
+          background: #FFFFFF;
+          box-shadow: 0px 5px 15px #D2D2D2;
+          border-radius: 10px;
+        }
+        /* Card hover h4 color style */
+        &:hover h4{
+          color: #008F48;
+        }
+        /* Card hover p color style */
+        &:hover p{
+          color: #000000;
+          opacity: 1;
+        }
+        /* Card hover button color bgc style */
+        &:hover button{
+          background-color: #008F48;
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
+}
